@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "ix.js",
+  "engines": {
+    "node": "12.11.1"
+  },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,10 +17,10 @@
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
+    
     "express": "^4.18.1",
     "firebase": "^9.8.3",
     "firebase-admin": "^11.0.0",
-    "nodeman": "^1.1.2",
-    "nodemon": "^2.0.19"
+    "nodeman": "^1.1.2"
   }
 }
